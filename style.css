@@ -1,0 +1,329 @@
+/* 
+  project: nukreal app sketch 
+  file: style.css 
+  by aaao
+*/
+
+/*icons | https://unicode-table.com/en/#box-drawing
+˂˃〉〈⌵⏵⏴⏶⏷
+❯❮☰
+░ ▒ ▓ ▦ ▩ ⩩
+♻⚛⚝
+*/
+
+/* ***************** include reset */
+
+/* ***************** general style, mobile first */
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+/*html {
+  background: url("./img/bg/szarvas_nukreal_landingpage.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+.site-header {
+  font-size: 1.5em;
+  line-height: 1.5em; 
+}
+
+main {
+  padding: 3em 1em;
+}
+
+
+
+
+
+/* ***************** NAVIGATION */
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+.nukreal-logo, 
+.nav-icon {
+  padding: .25em 1em;
+}
+/*header nav*/
+
+.nav-icon {
+  float: right;
+/*❯ ❮*/
+}
+
+/*image alternative*/
+.nukreal-logo {
+  font-family: "Helvetica Neue", Helvetica, Arial, Open-Sans, sans-serif;
+  font-weight: bolder;
+  float: left;
+  text-decoration: none;
+  color: #111;
+  display: block;
+}
+.k-in-nukreal {
+  display: inline-block;
+  -moz-transform:     scaleX(-1); 
+  -ms-transform:      scaleX(-1); 
+  -webkit-transform:  scaleX(-1); 
+  transform:          scaleX(-1); 
+  vertical-align: top;
+}
+
+
+
+
+
+/* ***************** TYPO */
+
+p {
+  width: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1em;
+}
+
+h3 {
+  padding: 0 .25em;
+  margin: 1.25em auto;
+}
+
+
+
+/* ***************** CLOTH CARDs */
+
+.card {
+  display: inline-block;
+  margin: .25em;
+  width: 20em; /* x */
+  height: auto;
+  min-height: 32.4em; /* ~ 1.618 x */
+  border: 1px solid grey;
+  border-radius: .25em;
+}
+
+/*graphics layer (front)*/
+.section-graphics {
+    z-index: 9999;
+    position: absolute;
+}
+.section-graphics img {
+width: 100%;
+padding: 5em;
+height: auto;
+margin: 0 auto;
+display: block;
+}
+
+/*cloth layer (background)*/
+.section-cloth img {
+  width: 100%;
+  padding: 1em;
+  height: auto;
+  margin: 0 auto;
+}
+
+.image-area {
+  height: 20em; /* x */
+  width: 20em; /* x */
+}
+
+
+
+details {
+/*  background-color: #ccc;*/
+  position: relative;
+  width: 100%;
+}
+/*hide cloth details info by default*/
+details .details-info {
+  text-align: center;
+  display: none;
+  margin-top: 4em;
+}
+details[open] .details-info {
+  display: block;
+}
+
+details p {
+  text-align: center;
+  display: block;
+  width: 100%;
+  clear: both;
+  font-size: 80%;
+}
+details ul {
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+}
+details li {
+  width: 33.33%;
+  list-style: none;
+  float: left;
+  text-align: center;
+  padding: .25em;
+  font-size: 80%;
+}
+
+summary {
+  display: inline-block;
+  width: 50%;
+}
+/*.details-graphics summary,
+.details-cloth summary {
+  width: 50%;
+  display: inline-block;
+}*/
+/*details summary::-webkit-details-marker {
+  background: red;
+  color: #fff;
+  font-size: 500%;
+}*/
+/*graphics / cloth details tab*/
+
+.tab {
+  width: 50%; 
+/*  float: left;*/
+  z-index: 9997;
+}
+.tab-graphics {
+  position: absolute;
+  left: 0;
+/*  float: left;  */
+  background-color: #eee;
+  clear: left;
+}
+.tab-cloth {
+  position: absolute;
+  right: 0;
+/*  float: right;  */
+  background-color: #ccc;
+  clear: right;
+}
+
+
+
+/*section navigation*/
+.nav-graphics, 
+.nav-cloth {
+  display: inline-block;
+/*  display: block;*/
+  width: 100%;
+  z-index: 9998;
+  position: absolute;
+  top: 50%;
+}
+.nav-graphics ul, 
+.nav-cloth ul {
+  display: block;
+  width: 100%;
+/*  float: left;*/
+  padding: 0;
+}
+
+.nav-graphics li, 
+.nav-cloth li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.prev { 
+  float: left;
+}
+.all {
+  text-align: center;
+  display: block; 
+}
+.next {
+/*  float: right;*/
+  position: absolute;
+  right: 0;
+}
+
+.nav-graphics a, 
+.nav-cloth a {
+  padding: 1em;
+  display: inline-block;
+}
+.nav-graphics a:hover,
+.nav-graphics a:focus,
+.nav-graphics a:active, 
+.nav-cloth a:hover,
+.nav-cloth a:focus,
+.nav-cloth a:active {
+  font-weight: bold;
+}
+
+/*.next, .prev, .all {}*/
+.prev a, 
+.next a {
+  font-size: 250%;
+  padding: 0 .25em .25em .25em;
+width: 1em;
+}
+.all a {
+  display: inline-block;
+/*  width: 100%;*/
+}
+
+
+
+
+/*footer*/
+.card-cta {
+  clear: both;
+  display:  block;
+  background-color: grey;
+  padding: 1em;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 3em;
+}
+
+.button {
+  font-weight: bold;
+  letter-spacing: 1.1;
+  text-shadow: blue 1px;
+  padding: .6em 1em;
+  text-align: center;
+  border-radius: 1em;
+  border: 1px dotted black;
+  background-color: #aaaacc;
+}
+.button:visited {
+  background-color: #aaaacc;
+}
+.button:hover,
+.button:focus {
+  background-color: #ddddee;
+  border: 1px solid;
+}
+.button:active {
+  background-color: white;
+  text-shadow: blue 2px;
+  border: 1px solid;
+}
+
+
+
+
+
+/* ***************** test */
+
+* {
+  border: 1px red solid;
+}
