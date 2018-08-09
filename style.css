@@ -1,6 +1,6 @@
-/* 
-  nukReal app sketch 
-  style.css 
+/*
+  nukReal app sketch
+  style.css
   by aaao
 */
 
@@ -33,7 +33,7 @@ html, body {
 
 .site-header {
   font-size: 1.5em;
-  line-height: 1.5em; 
+  line-height: 1.5em;
 }
 
 main {
@@ -51,7 +51,7 @@ a {
   color: #111;
 }
 
-.nukreal-logo, 
+.nukreal-logo,
 .nav-icon {
   padding: .25em 1em;
 }
@@ -73,10 +73,10 @@ a {
 }
 .k-in-nukreal {
   display: inline-block;
-  -moz-transform:     scaleX(-1); 
-  -ms-transform:      scaleX(-1); 
-  -webkit-transform:  scaleX(-1); 
-  transform:          scaleX(-1); 
+  -moz-transform:     scaleX(-1);
+  -ms-transform:      scaleX(-1);
+  -webkit-transform:  scaleX(-1);
+  transform:          scaleX(-1);
   vertical-align: top;
 }
 
@@ -195,7 +195,7 @@ summary {
 /*graphics / cloth details tab*/
 
 .tab {
-  width: 50%; 
+  width: 50%;
 /*  float: left;*/
   z-index: 9997;
 }
@@ -217,7 +217,7 @@ summary {
 
 
 /*section navigation*/
-.nav-graphics, 
+.nav-graphics,
 .nav-cloth {
   display: inline-block;
 /*  display: block;*/
@@ -226,7 +226,7 @@ summary {
   position: absolute;
   top: 50%;
 }
-.nav-graphics ul, 
+.nav-graphics ul,
 .nav-cloth ul {
   display: block;
   width: 100%;
@@ -234,18 +234,18 @@ summary {
   padding: 0;
 }
 
-.nav-graphics li, 
+.nav-graphics li,
 .nav-cloth li {
   list-style: none;
   display: inline-block;
   vertical-align: middle;
 }
-.prev { 
+.prev {
   float: left;
 }
 .all {
   text-align: center;
-  display: block; 
+  display: block;
 }
 .next {
 /*  float: right;*/
@@ -253,14 +253,14 @@ summary {
   right: 0;
 }
 
-.nav-graphics a, 
+.nav-graphics a,
 .nav-cloth a {
   padding: 1em;
   display: inline-block;
 }
 .nav-graphics a:hover,
 .nav-graphics a:focus,
-.nav-graphics a:active, 
+.nav-graphics a:active,
 .nav-cloth a:hover,
 .nav-cloth a:focus,
 .nav-cloth a:active {
@@ -268,7 +268,7 @@ summary {
 }
 
 /*.next, .prev, .all {}*/
-.prev a, 
+.prev a,
 .next a {
   font-size: 250%;
   padding: 0 .25em .25em .25em;
@@ -323,7 +323,7 @@ width: 1em;
 
 
 /* ***************** test */
-
+/*
 * {
   border: 1px red solid;
-}
+} */
